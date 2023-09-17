@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---</title>
+</head>
+
+<body>
+
+    <div style="margin-top: 20px;">
+        <div style="display: flex; gap: 20px;">
+            <div>
+                <h3>Envar mensaje</h3>
+                <hr>
+                <input type="text" id="txtUid" style="margin-bottom: 10px;" autocomplete="off" placeholder="uid">
+                <input type="text" id="txtMessage" style="margin-bottom: 10px;" autocomplete="off" placeholder="Mensaje">
+
+                <h3>Usuarios: </h3>
+                <hr>
+                <ul id="ulUsers">
+
+                </ul>
+            </div>
+            <div>
+                <h3>Mensajes: </h3>
+                <hr>
+                <ul id="ulMessages">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <button id="btnLogout">
+        Logout
+    </button>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+
+</html>

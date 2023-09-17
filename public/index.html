@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sign-in</title>
+</head>
+
+<body>
+
+    <h1>Google Sign-in</h1>
+    <br>
+
+
+   
+    <div id="g_id_onload" data-client_id="851629179969-0l3g2ipkl9dn2lo9moveuq33fr72hl8l.apps.googleusercontent.com" 
+    data-auto_prompt="false" 
+    data-callback="handleCredentialResponse"></div>
+    </div>
+    <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with"
+        data-shape="rectangular" data-logo_alignment="left">
+    </div>
+
+    <button id="google_signout">
+        SignOut
+    </button>
+
+    <div>
+        <h1>Login Manual</h1>
+
+        <form>
+            <input type="text" name="email" placeholder="Correo">
+            <input type="password" name="password" placeholder="Contraseña">
+            <button class="btm btn-primary" type="submit">Ingresar</button>
+        </form>
+
+    </div>
+
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
